@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hola mundo!</h1>
-  <h2>ISDI Coders</h2>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-box demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="top-container">
+        <li class="top-container__circle top-container__circle--red"></li>
+        <li class="top-container__circle top-container__circle--yellow"></li>
+        <li class="top-container__circle top-container__circle--brown"></li>
+      </ul>
+    </header>
+    <main>
+      <section class="profile">
+        <img
+          class="profile__avatar"
+          src="https://via.placeholder.com/100x100"
+          alt="placeholder"
+        />
+        <div class="profile__description">
+          <picture class="profile__icon">
+            <img src="https://via.placeholder.com/40x40" alt="placeholder" />
+          </picture>
+          <div class="profile__description">
+            <h1>Heading</h1>
+            <h2>Subheading</h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue
+        nisi sed velit ullamcorper, in aliquet ligula volutpat. Fusce neque
+        felis, ornare sit amet fringilla ac, mollis eu dolor. Fusce in urna
+        quam. Duis scelerisque auctor tincidunt. Mauris egestas in arcu eget
+        ullamcorper. Cras velit erat, placerat eget volutpat vitae, semper
+        euismod arcu. Donec gravida, est in volutpat pellentesque, lacus enim
+        fringilla ligula, ultricies dapibus magna nunc vel velit. Curabitur
+        finibus fringilla vulputate. Vivamus libero tortor, congue id tincidunt
+        consectetur, faucibus quis arcu. Suspendisse maximus elementum lacinia.
+      </section>
+      <section class="list-article">
+        <picture class="list-article__item">
+          <img src="https://via.placeholder.com/100x100" alt="placeholder" />
+          <h2>Heading</h2>
+          <h3>Subheading</h3>
+        </picture>
+        <picture class="list-article__item">
+          <img src="https://via.placeholder.com/100x100" alt="placeholder" />
+          <h2>Heading</h2>
+          <h3>Subheading</h3>
+        </picture>
+        <picture class="list-article__item">
+          <img src="https://via.placeholder.com/100x100" alt="placeholder" />
+          <h2>Heading</h2>
+          <h3>Subheading</h3>
+        </picture>
+      </section>
+    </main>
+  </body>
 </html>
