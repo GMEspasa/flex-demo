@@ -20,6 +20,7 @@ header {
   border-radius: 50%;
   margin: 0px 10px;
   background-color: #ccc;
+  cursor: pointer;
 }
 
 .top-container__circle--red {
@@ -51,8 +52,28 @@ section.profile {
   margin-right: 20px;
 }
 
+
+.profile__description-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile__icon {
+  padding-top: 20px;
+}
+
 .profile__icon img {
   border-radius: 50%;
+}
+
+.profile__title {
+  padding-left: 20px;
+}
+
+.profile__date {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .list-article {
@@ -73,14 +94,40 @@ section.profile {
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
 }
 
+
 @media screen and (min-width: 600px) {
   section.profile {
     flex-direction: row;
   }
 
   .profile__avatar {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .profile__description-top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile__icon {
+    align-self: center;
+  }
+
+  .profile__title{
+    padding-left: 30px;
+  }
+
+  .profile__date {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
   }
 
   .list-article {
@@ -89,12 +136,5 @@ section.profile {
     justify-content: space-evenly;
   }
 
-  .profile__description {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .profile__icon {
-    align-self: center;
-  }
+ 
 }
